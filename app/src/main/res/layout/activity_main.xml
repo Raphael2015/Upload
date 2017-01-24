@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.androidmads.retrofit2sample.MainActivity">
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        android:layout_height="200dp"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:text="Make Image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMake"
+            android:layout_weight="0.50" />
+
+        <Button
+            android:id="@+id/pick_img"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Pick Image"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtNome" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        tools:text="@string/quant" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/edtQuant" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
